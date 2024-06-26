@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: floralwhite;
+        }
+        
+        h1{
+            margin-top: 50px;
+            margin-left: 510px;
+            font-size: 60px;
+            font-family: 'Karla', sans-serif;
+            font-weight: lighter;
+        }
+        
+        .slider-frame{
+            overflow: hidden;
+            height: 400px; /* Adjusted height */
+            width: 600px; /* Adjusted width */
+            margin-left: 180px; /* Adjusted margin */
+            margin-top: 20px;
+            position: relative; /* Added position */
+        }
+        
+        /*---------- SLIDE ANIMATION --------------*/
+        
+        @keyframes slide_animation{
+            0% {left:0px;}
+            10% {left:0px;}
+            20% {left:600px;} /* Adjusted left value */
+            30% {left:600px;}
+            40% {left: 1200px;} /* Adjusted left value */
+            50% {left: 1200px;}
+            60% {left: 1800px;} /* Adjusted left value */
+            70% {left: 1800px;}
+            80% {left: 2400px;} /* Adjusted left value */
+            90% {left: 2400px;}
+            100% {left:0px;}
+        }
+        
+        @-webkit-keyframes slide_animation{
+            0% {left:0px;}
+            10% {left:0px;}
+            20% {left:600px;} /* Adjusted left value */
+            30% {left:600px;}
+            40% {left: 1200px;} /* Adjusted left value */
+            50% {left: 1200px;}
+            60% {left: 1800px;} /* Adjusted left value */
+            70% {left: 1800px;}
+            80% {left: 2400px;} /* Adjusted left value */
+            90% {left: 2400px;}
+            100% {left:0px;}
+        }
+        
+        .slide-images{
+            width: 3600px; /* Adjusted width */
+            height: 400px; /* Adjusted height */
+            margin: 0 0 0 -1200px; /* Adjusted margin */
+            position: relative;
+            -webkit-animation-name: slide_animation;
+            animation-name: slide_animation;
+            -webkit-animation-duration: 36s; /* Adjusted duration */
+            animation-duration: 36s; /* Adjusted duration */
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-play-state: running;
+            animation-play-state: running;
+        }
+        
+        .img-container{
+            height: 400px; /* Adjusted height */
+            width: 600px; /* Adjusted width */
+            position: relative;
+            float: left;
+            overflow: hidden; /* Ensures images don't overflow their container */
+            border-radius: 20px; /* Added border radius for a stylish shape */
+            margin-right: 20px; /* Added margin to separate images */
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images cover the entire container */
+        }
+        
+        </style>
+</head>
+<body>
+    
+    <div class="slider-frame">
+        <div class="slider-html"></div>
+        <div class="slide-images">
+            <div class="img-container">
+                <img src="image1.jpeg">
+            </div>
+            <div class="img-container">
+                <img src="image2.jpg">
+            </div>
+            <div class="img-container">
+                <img src="image3.jpg">
+            </div>
+         
+        </div>
+    </div>
+</body>
+</html>

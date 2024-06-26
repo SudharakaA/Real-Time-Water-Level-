@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light grey background */
+            color: #343a40; /* Dark grey text color */
+        }
+        .container {
+            padding: 50px 20px;
+        }
+        h1, h2 {
+            color: #007bff; /* Blue heading color */
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        .btn {
+            background-color: #007bff; /* Blue button color */
+            color: #fff; /* White button text color */
+        }
+        .about-section {
+            background-color: #fff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .about-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .img-container {
+            height: 400px; /* Adjusted height */
+            width: 600px; /* Adjusted width */
+            position: relative;
+            float: left;
+            overflow: hidden; /* Ensures images don't overflow their container */
+            border-radius: 20px; /* Added border radius for a stylish shape */
+            margin-right: 20px; /* Added margin to separate images */
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images cover the entire container */
+        }
+        /* Slider styles */
+        .slider-frame {
+            overflow: hidden;
+            height: 400px;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        @keyframes slide_animation {
+            0% {left:0px;}
+            10% {left:0px;}
+            20% {left:600px;}
+            30% {left:600px;}
+            40% {left: 1200px;}
+            50% {left: 1200px;}
+            60% {left: 1800px;}
+            70% {left: 1800px;}
+            80% {left: 2400px;}
+            90% {left: 2400px;}
+            100% {left:0px;}
+        }
+        .slide-images {
+            width: 3600px;
+            height: 400px;
+            margin: 0 0 0 -1200px;
+            position: relative;
+            animation-name: slide_animation;
+            animation-duration: 36s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+        /* Additional style for footer */
+        .footer {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text color */
+            padding: 20px; /* Added padding for better visibility */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Navbar.png" alt="Logo">
+                Hydrology & Disaster Management Unit
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sign_in.html">Sign</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="container">
+        <h1>About Us</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="about-section">
+                    <h2>Our Mission</h2>
+                    <p>We are dedicated to preserving Sri Lanka's rich Irrigation Heritage and developing sustainable water and land resources. Our mission is to provide water for paddy cultivation to ensure food security and fulfill all other water needs of the respective regions. We aim to implement policies, plans, and programs to achieve these goals.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-section">
+                    <h2>Our Vision</h2>
+                    <p>Our vision is to be leaders in the sustainable management of water and land resources, contributing to the socio-economic development of Sri Lanka. We envision a future where our Irrigation Heritage is preserved, and water resources are managed efficiently to meet the needs of present and future generations.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <!-- Slider Section -->
+            <div class="slider-frame">
+                <div class="slider-html"></div>
+                <div class="slide-images">
+                    <div class="img-container">
+                        <img src="image1.jpeg">
+                    </div>
+                    <div class="img-container">
+                        <img src="image2.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="image3.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- End Slider Section -->
+        </div>
+        <p class="text-center">
+            For more information, feel free to <a href="contact.html">contact us</a>.
+        </p>
+        
+    </div>
+
+
+   <h3><p><left>Objectives</left></p> </h3>
+   <center><u>The main objectives of the Irrigation Department are as follows;</u></center></p>
+    <ul type="circle">
+<li>Development of land and water resources for irrigated agriculture, hydro power, flood control, domestic usage, industrial usage and aquaculture development, while assuring environmental sustainability.
+</li>
+<li>Provision of lift irrigation, irrigation drainage and salinity extrusion facilities for cultivable lands in Irrigation and Drainage Projects.
+</li>
+<li>Facilitation for drinking water.</li>
+<li>Flood protection and drainage facilities to lands affected by floods.</li>
+<li>Alleviation of poverty of the rural farming community by increasing their farm income and raising their standard of living.</li>
+<li>Management of Water economically for sustainable agriculture and other uses.</li>
+<li>Integrated water resources management and participatory management in river basins assigned to ID</li>
+     </ul>
+
+
+     <h3><p><left>Functions</left></p> </h3>
+     <ul type="circle">
+        <li>Preparation of Master Plan for development of the different river basins for the optimum utilization of land and water resources giving priority to the environmental factors.
+        </li>
+        <li>Collection, development and management of historical data base for water resources and flood management of the country.
+        </li>
+        <li>Project formulation and detailed designs of irrigation, hydro-power, flood control and reclamation Projects.
+        </li>
+        <li>Construction of irrigation and settlement projects for the conservation, diversion and distribution of water under gravity and lift Irrigation to new and existing land for cultivation by farmers for enhanced food crop production and to upgrade their living conditions.
+        </li>
+        <li>Construction of drainage, flood protection and salt water extrusion projects for the protection of cultivable land to enable the cultivation of such lands with rainfall for food crop production with minimized risk.
+        </li>
+        <li>Providing drainage and flood protection facilities to minimize or mitigate the damages caused by floods.
+        </li>
+        <li>Operation, maintenance, improvements, rehabilitation and water management of medium and major irrigation schemes. Drainage and flood protection scheme and salt water extrusion schemes for optimum productivity ensuring the participation of beneficiaries. Catering of water for inter sectorial use, domestic, industrial use and environmental requirements.
+        </li>
+        <li>Maintaining and upgrading the water infrastructure including dams and head works of the system
+        </li>
+        <li>Research in Hydraulics, Hydrology, Soil Mechanics, Engineering Geology, Geographic Information System (GIS), Engineering Materials and Land Use as applied to Water Resources Development Projects.
+        </li>
+        <li>Human resources development for optimum utilization of human resources in irrigation sector.
+        </li>
+     </ul>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, est ut porta accumsan, sem urna bibendum eros.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Connect With Us</h4>
+                    <p>Follow us on social media</p>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Irrigation Department. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

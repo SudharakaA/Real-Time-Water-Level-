@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Level Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="time"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button[type="submit"],
+        button[type="button"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover,
+        button[type="button"]:hover {
+            background-color: #0056b3;
+        }
+        /* New button style */
+        button[type="edit"] {
+            padding: 10px 20px;
+            background-color: #28a745; /* Green color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="edit"]:hover {
+            background-color: #218838; /* Darker green color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Insert Water Level</h2>
+        <form action="insert.php" method="post">
+            <label for="station_name">Station Name:</label>
+            <input type="text" name="station_name" id="station_name" required>
+            
+            <label for="gauge_entered_by">Gauge Entered Person Name:</label>
+            <input type="text" name="gauge_entered_by" id="gauge_entered_by" required>
+
+            <label for="gauge_collected_by">Gauge Collected Person Name:</label>
+            <input type="text" name="gauge_collected_by" id="gauge_colllected_by" required>
+            
+            <label for="gauge_date">Gauge Collected Date:</label>
+            <input type="date" name="gauge_date" id="gauge_date" required>
+            
+            <label for="gauge_time">Gauge Collected Time:</label>
+            <input type="time" name="gauge_time" id="gauge_time" required>
+            
+            <label for="water_level">Water Level:</label>
+            <input type="number" name="water_level" id="water_level" step="any" required>
+            
+            <button type="submit">Submit</button>
+            
+            <!-- New Edit button -->
+            <button type="button" onclick="editForm()" id="editButton">Edit</button>
+        </form>
+        <button onclick="viewData()">View Entered Data</button>
+    </div>
+
+    <script>
+        function viewData() {
+            window.location.href = "view_data.html";
+        }
+        
+        function editForm() {
+            window.location.href = "edit.php";
+        }
+    </script>
+
+</body>
+</html>
